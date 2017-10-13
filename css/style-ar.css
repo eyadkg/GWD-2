@@ -175,6 +175,10 @@ footer {
     width:25%;
     padding:20px 10px 35px 17px;
 }
+#right-content p{
+    font-size:25px;
+    
+}
 
 /* For mobile phones: */
 [class*="col-"] {

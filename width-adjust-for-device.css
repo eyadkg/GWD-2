@@ -1,0 +1,202 @@
+﻿.off {
+    position:absolute !important;
+    clip:rect(1px,1px,1px,1px);/*IE6 , IE7*/
+    clip:rect(1px,1px,1px,1px);
+    padding:0 !important;
+    border:0 !important;
+    height:1px !important;
+    width:1px !important;
+    overflow:hidden;
+}
+
+/*#design>* {background-color:lightblue; display:flex;}
+
+#c-logo>* {display:flex;}
+#c-logo img {float:left;}
+
+#sm-logo>#c-logo img {align-items:flex-start;}
+
+#sm-logo {flex-flow:row-reverse wrap;width:100%;}*/
+
+html, body {padding:0;margin:0; width:auto;}
+
+p,h1,h2,h3,h4,h5,h5,h6 {padding:0 30px 0 30px;}
+
+#design {background-color:#558c89;overflow:hidden;}
+
+#c-logo {float:left;padding:10px 0 10px 0;margin:14px 0 10px 0;}
+
+
+
+
+#sm-logo {float:right;display:inline;padding:0;margin:22px 0 22px 0;direction:rtl;}
+
+#nav    {background-color:#74afad;padding:0; border-bottom:2px solid #ececea;border-top:2px solid #ececea; 
+
+         display:flex; flex-flow:row wrap;
+}
+#nav a  {padding:10px 0 8px 0;margin:auto;font-family:'Hobo Std';font-size:16px;text-decoration:none; text-align:center;}
+
+   
+#nav a:link     {color:#ececea;}
+#nav a:visited  {color:#ececea;}
+#nav a:active   {color:#ececea;}
+#nav a:hover    {color:#ececea;background-color:#d9853b;}
+#nav a:focus    {color:#ececea;}
+
+
+
+section {background-color:#ececea;overflow:hidden;/*#ececea*/}
+section #slider {background-color:#ececea;background-image: url('../images/logo/company logo-last1.png') ; }
+
+footer  {background-color:#d9853b;}
+
+#sm-logo a img {
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius:100px;
+        border-radius: 100px;
+
+    padding: 3px;
+    margin: 7px;
+    background-color: #ffffff;
+}
+
+/*.lang img {width:35px;height:35px;border-radius:25px;background-color:aliceblue;padding:7px;}*/
+
+#sm-logo a img:link        {background-color:aliceblue;}
+#sm-logo a img:visited     {background-color:aliceblue;}
+#sm-logo a img:active      {background-color:aliceblue;}
+#sm-logo a img:hover {
+    background-color: #d9853b;
+    
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    width: 35px;
+    height: 35px;
+}
+#sm-logo a img:focus       {background-color:aliceblue;}
+
+
+main {background-color:#ececea; float:left; font-family:'Hobo Std';}
+aside { background-color: #74afad;float: right;font-family: 'Hobo Std';}
+
+footer{font-family:'Hobo Std';text-align:center;padding:7px 0 7px 0;}
+
+#mainaside {
+   width:100%;
+    display:-webkit-flex;
+    display:flex;
+}
+
+#content {
+    width:75%;
+    padding: 20px 45px 35px 40px;
+}
+
+#right-content {
+    width: 25%;
+    padding: 20px 10px 35px 17px;
+}
+
+
+
+                    /* For mobile phones: */
+                    [class*="col-"] {width: 100%;}
+
+                    @media only screen and (max-width:600px) {
+                        .c-logo {
+                            text-align: center;
+                            
+                            padding: 0;
+                            margin: auto;
+                        }
+
+                        .sm-logo {
+                            text-align: center;
+                            
+                            padding: 0;
+                            margin: auto;
+                        }
+
+                        .mainaside {
+                            width:100%;
+                            flex-flow:column wrap;
+                            -webkit-flex-flow:column wrap;
+                            
+                        }
+                        
+                        .content {
+                            width:100% !important;
+                            text-align:center;
+                            text-justify:auto;
+                            padding:0 !important;
+                        }
+                       
+                        .right-content {
+                            width:100% !important;
+                            text-align:center;
+                            text-justify:auto;
+                            padding:0 !important;
+                            
+                        }
+                    }
+
+                    @media only screen and (min-width: 600px) {
+                        /* For tablets: */
+                        .col-m-1 {width: 8.33%;}
+                        .col-m-2 {width: 16.66%;}
+                        .col-m-3 { width: 25%;}
+                        .col-m-4 { width: 33.33%;}
+                        .col-m-5 { width: 41.66%;}
+                        .col-m-6 { width: 50%;}
+                        .col-m-7 {width: 58.33%;}
+                        .col-m-8 {width: 66.66%;}
+                        .col-m-9 {width: 75%;}
+                        .col-m-10 {width: 83.33%;}
+                        .col-m-11 {width: 91.66%;}
+                        .col-m-12 {width: 100%;}
+
+                        .c-logo {
+                            text-align:center;
+                            position: center;
+                            padding: 0;
+                            margin: auto;
+                        }
+
+                        .sm-logo {
+                            text-align:center;
+                            position:center;
+                            padding:0;
+                            margin:auto;
+                        }
+
+
+                    }
+
+                    @media only screen and (min-width: 768px) {
+                        /* For desktop: */
+                        .col-1 {width: 8.33%;}
+                        .col-2 {width: 16.66%;}
+                        .col-3 {width: 25%;}
+                        .col-4 {width: 33.33%;}
+                        .col-5 {width: 41.66%;}
+                        .col-6 {width: 50%;}
+                        .col-7 {width: 58.33%;}
+                        .col-8 {width: 66.66%;}
+                        .col-9 { width: 75%; }
+                        .col-10 {width: 83.33%;}
+                        .col-11 {width: 91.66%;}
+                        .col-12 {width: 100%;}
+
+                        
+                    }
+
+
+
+
+
+
+
